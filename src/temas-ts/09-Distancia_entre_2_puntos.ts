@@ -27,6 +27,3 @@ export class Calcular_Distancia{
 
 const distancia = new Calcular_Distancia(2,3,5,7);
 distancia.imprimir();
-
-
-
