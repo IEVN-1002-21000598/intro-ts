@@ -12,13 +12,13 @@ export class Calcular_Distancia{
     }
 
     imprimir(){
-        console.log(`La distancia entre el punto (${this.x1}, ${this.y1}) y el punto (${this.x2}, ${this.y2}) es: ${this.calular()}`)
+        console.log(`La distancia entre el punto (${this.x1}, ${this.y1}) y el punto (${this.x2}, ${this.y2}) es: ${this.calular(this.x1, this.y1,this.x2,this.y2)}`)
     }
 
-    public calular(): number{
-        let xp = this.x2 - this.x1;
+    public calular(x1:number,y1:number,x2:number,y2:number): number{
+        let xp = x2 - x1;
         xp = xp * xp;
-        let yp = this.y2 - this.y1;
+        let yp = y2 - y1;
         yp = yp * yp;
         let distancia = Math.sqrt(xp + yp);
         return distancia;
